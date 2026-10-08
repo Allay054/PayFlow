@@ -4,6 +4,10 @@ sealed class PayFlowRoute(
     val route: String
 ) {
 
+    data object Login : PayFlowRoute("login")
+
+    data object Register : PayFlowRoute("register")
+
     data object Home : PayFlowRoute("home")
 
     data object Wallet : PayFlowRoute("wallet")
